@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+  color: #333;
+}
+
+header {
+  background-color: #4A90E2;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url('https://i.pinimg.com/736x/03/14/96/031496534544637deedf848900cec9af.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 48px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#gameMenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.game-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  background-color: #f0faff;
+}
+
+.game-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.game-card p {
+  color: #666;
+}
+
+.game-arena {
+  display: none;
+  padding: 20px;
+  margin: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4A90E2;
+  color: white;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+#circleGameArena {
+  position: relative;
+  height: 400px;
+  margin-top: 20px;
+  border: 3px dashed #4A90E2;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  
+}
